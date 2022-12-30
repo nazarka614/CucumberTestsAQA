@@ -10,6 +10,7 @@ import pageobject.YoutubePageObject;
 public class Stepdefs extends BaseClass {
 
     static YoutubePageObject youtubePageObject = PageFactory.initElements(driver, YoutubePageObject.class);
+
     @When("i open page {string}")
     public void iOpenPage(String str) {
         driver.get(str);

@@ -23,8 +23,9 @@ public class DriverConfig {
 
     private static void createChrome() {
         ChromeOptions options = new ChromeOptions();
-       // options.addArguments("--incognito");
+        options.addArguments("--incognito");
         options.addArguments("--disable-notifications");
+       // options.addArguments("--start--maximized");
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

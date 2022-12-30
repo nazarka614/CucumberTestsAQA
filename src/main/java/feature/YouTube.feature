@@ -1,3 +1,4 @@
+@YouTube
 Feature: YouTubeSearch
   Scenario: Search test
     When i open page "https://www.youtube.com/"
